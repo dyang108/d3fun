@@ -1,0 +1,4 @@
+server/secret.py
+.DS_Store
+*.pyc
+node_modules
