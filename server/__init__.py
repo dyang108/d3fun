@@ -1,4 +1,3 @@
-import config
-import api
-import apis
+from config import app
 import models
+import api

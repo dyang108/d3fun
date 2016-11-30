@@ -1,5 +1,8 @@
 from apis import *
-from config import *
+from config import app
+from flask_restful import Api, Resource
+import json
+
 api = Api(app)
 
 class Twitter(Resource):

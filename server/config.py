@@ -1,5 +1,7 @@
-from app import app
-from flask_mongoalchemy import MongoAlchemy
-from flask_restful import Resource, Api
-import json
-app.config['MONGOALCHEMY_DATABASE'] = 'library'
+from flask import Flask, send_file
+
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+  return send_file("../templates/index.html")
