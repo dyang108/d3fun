@@ -2,11 +2,13 @@ aniso8601==1.2.0
 certifi==2016.9.26
 click==6.6
 Flask==0.11.1
+Flask-MongoAlchemy==0.7.2
+Flask-PyMongo==0.4.1
 Flask-RESTful==0.3.5
 itsdangerous==0.24
 Jinja2==2.8
 MarkupSafe==0.23
-MongoAlchemy==0.21
+MongoAlchemy==0.19
 pymongo==2.8.1
 python-dateutil==2.6.0
 pytz==2016.7

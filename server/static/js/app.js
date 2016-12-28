@@ -24,25 +24,17 @@ app.config(['$routeProvider',
 app.service('Resources', ['$resource', function ($resource) {
   /* ARRAY TYPES */
   this.getApiList = function () {
-    return $resource('/api/twitter')
+    return $resource('/api/list')
   }
 
   /* OBJECT TYPES */
 }])
 
 app.controller('DataSelectionCtrl', ['$scope', 'Resources', function ($scope, Resources) {
-  Resources.getApiList().query(function (list) {
-    console.log(list)
+  $scope.apiList = Resources.getApiList().query(function (list) {
+    $scope.selectedApi = list[0].url
   })
+  $scope.dataSelectStage = 0
   // $scope.selectedApi = $scope.apiList[0].value
-  // $scope.dataSelectStage = 0
 }])
-
-
-// app.service('Resources', function ($resource) {
-//     this.getApiList = function () {
-//       return $resource('/api/list')
-//     }
-//   })
-
 

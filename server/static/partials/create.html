@@ -4,7 +4,7 @@
     <div class="panel-heading">Select a data source</div>
     <div class="panel-collapse collapse" uib-collapse="dataSelectStage != 0">
       <div class="panel-body">
-        <select ng-options="a.value as a.name for a in apiList" ng-model="selectedApi" class="form-control">
+        <select ng-options="a.url as a.name for a in apiList" ng-model="selectedApi" class="form-control">
         </select>
       </div>
       <div class="panel-footer">
@@ -17,7 +17,7 @@
     <div class="panel-heading">Select a category</div>
     <div class="panel-collapse collapse" uib-collapse="dataSelectStage != 1">
       <div class="panel-body">
-        <select ng-options="a.value as a.name for a in apiList" ng-model="selectedApi" class="form-control">
+        <select ng-options="a.url as a.name for a in apiList" ng-model="selectedApi" class="form-control">
         </select>
       </div>
     </div>
@@ -26,7 +26,7 @@
     <div class="panel-heading">Select the data</div>
     <div class="panel-collapse collapse" uib-collapse="dataSelectStage != 2">
       <div class="panel-body">
-        <select ng-options="a.value as a.name for a in apiList" ng-model="selectedApi" class="form-control">
+        <select ng-options="a.url as a.name for a in apiList" ng-model="selectedApi" class="form-control">
         </select>
       </div>
     </div>

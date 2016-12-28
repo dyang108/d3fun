@@ -1,5 +1,5 @@
 from server import *
-from server.models import *
+from models import *
 from flask import Flask
 
 name = raw_input('Source Name: ')
