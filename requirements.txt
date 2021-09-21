@@ -1,7 +1,7 @@
 aniso8601==1.2.0
 certifi==2016.9.26
 click==6.6
-Flask==0.11.1
+Flask==1.0
 Flask-MongoAlchemy==0.7.2
 Flask-PyMongo==0.4.1
 Flask-RESTful==0.3.5
